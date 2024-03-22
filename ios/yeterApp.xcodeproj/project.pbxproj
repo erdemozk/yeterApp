@@ -14,6 +14,29 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-yeterApp-yeterAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-yeterApp-yeterAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		AD2203972BACBFBF00C27218 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203842BACBFBF00C27218 /* Feather.ttf */; };
+		AD2203982BACBFBF00C27218 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203852BACBFBF00C27218 /* FontAwesome5_Regular.ttf */; };
+		AD2203992BACBFBF00C27218 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203862BACBFBF00C27218 /* EvilIcons.ttf */; };
+		AD22039A2BACBFBF00C27218 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203872BACBFBF00C27218 /* MaterialCommunityIcons.ttf */; };
+		AD22039B2BACBFBF00C27218 /* FontAwesome6_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203882BACBFBF00C27218 /* FontAwesome6_Regular.ttf */; };
+		AD22039C2BACBFBF00C27218 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203892BACBFBF00C27218 /* Fontisto.ttf */; };
+		AD22039D2BACBFBF00C27218 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD22038A2BACBFBF00C27218 /* Octicons.ttf */; };
+		AD22039E2BACBFBF00C27218 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD22038B2BACBFBF00C27218 /* SimpleLineIcons.ttf */; };
+		AD22039F2BACBFBF00C27218 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD22038C2BACBFBF00C27218 /* Zocial.ttf */; };
+		AD2203A02BACBFBF00C27218 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD22038D2BACBFBF00C27218 /* AntDesign.ttf */; };
+		AD2203A12BACBFBF00C27218 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD22038E2BACBFBF00C27218 /* FontAwesome5_Solid.ttf */; };
+		AD2203A22BACBFBF00C27218 /* FontAwesome6_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD22038F2BACBFBF00C27218 /* FontAwesome6_Solid.ttf */; };
+		AD2203A32BACBFBF00C27218 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203902BACBFBF00C27218 /* FontAwesome5_Brands.ttf */; };
+		AD2203A42BACBFBF00C27218 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203912BACBFBF00C27218 /* FontAwesome.ttf */; };
+		AD2203A52BACBFBF00C27218 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203922BACBFBF00C27218 /* Entypo.ttf */; };
+		AD2203A62BACBFBF00C27218 /* FontAwesome6_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203932BACBFBF00C27218 /* FontAwesome6_Brands.ttf */; };
+		AD2203A72BACBFBF00C27218 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203942BACBFBF00C27218 /* MaterialIcons.ttf */; };
+		AD2203A82BACBFBF00C27218 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203952BACBFBF00C27218 /* Foundation.ttf */; };
+		AD2203A92BACBFBF00C27218 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD2203962BACBFBF00C27218 /* Ionicons.ttf */; };
+		ADB31C192B766A04002C4DF2 /* YeterNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB31C182B766A04002C4DF2 /* YeterNative.swift */; };
+		ADB31C1C2B766D1B002C4DF2 /* YeterNative.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB31C1B2B766D1B002C4DF2 /* YeterNative.m */; };
+		ADD378692B3242D9000AF629 /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD378682B3242D9000AF629 /* MessageFilterExtension.swift */; };
+		ADD3786D2B3242D9000AF629 /* MessageFilterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ADD378662B3242D9000AF629 /* MessageFilterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +47,28 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = yeterApp;
 		};
+		ADD3786B2B3242D9000AF629 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADD378652B3242D9000AF629;
+			remoteInfo = MessageFilterExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADD378712B3242D9000AF629 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ADD3786D2B3242D9000AF629 /* MessageFilterExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* yeterAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = yeterAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +87,33 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-yeterApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yeterApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = yeterApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-yeterApp-yeterAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yeterApp-yeterAppTests.release.xcconfig"; path = "Target Support Files/Pods-yeterApp-yeterAppTests/Pods-yeterApp-yeterAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		AD2203842BACBFBF00C27218 /* Feather.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		AD2203852BACBFBF00C27218 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		AD2203862BACBFBF00C27218 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		AD2203872BACBFBF00C27218 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		AD2203882BACBFBF00C27218 /* FontAwesome6_Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome6_Regular.ttf"; sourceTree = "<group>"; };
+		AD2203892BACBFBF00C27218 /* Fontisto.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		AD22038A2BACBFBF00C27218 /* Octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
+		AD22038B2BACBFBF00C27218 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		AD22038C2BACBFBF00C27218 /* Zocial.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		AD22038D2BACBFBF00C27218 /* AntDesign.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		AD22038E2BACBFBF00C27218 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		AD22038F2BACBFBF00C27218 /* FontAwesome6_Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome6_Solid.ttf"; sourceTree = "<group>"; };
+		AD2203902BACBFBF00C27218 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
+		AD2203912BACBFBF00C27218 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		AD2203922BACBFBF00C27218 /* Entypo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		AD2203932BACBFBF00C27218 /* FontAwesome6_Brands.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = FontAwesome6_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome6_Brands.ttf"; sourceTree = "<group>"; };
+		AD2203942BACBFBF00C27218 /* MaterialIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		AD2203952BACBFBF00C27218 /* Foundation.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		AD2203962BACBFBF00C27218 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		AD3E8C322BA74B6800426533 /* MessageFilterExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MessageFilterExtension.entitlements; sourceTree = "<group>"; };
+		ADB31C182B766A04002C4DF2 /* YeterNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YeterNative.swift; sourceTree = "<group>"; };
+		ADB31C1B2B766D1B002C4DF2 /* YeterNative.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YeterNative.m; sourceTree = "<group>"; };
+		ADB31C1D2B76706E002C4DF2 /* YeterNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YeterNative-Bridging-Header.h"; sourceTree = "<group>"; };
+		ADBC7DDA2BA317DB0042D1F6 /* yeterApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = yeterApp.entitlements; path = yeterApp/yeterApp.entitlements; sourceTree = "<group>"; };
+		ADD378662B3242D9000AF629 /* MessageFilterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageFilterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADD378682B3242D9000AF629 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
+		ADD3786A2B3242D9000AF629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -60,6 +131,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C80B921A6F3F58F76C31292 /* libPods-yeterApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD378632B3242D9000AF629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +164,17 @@
 		13B07FAE1A68108700A75B9A /* yeterApp */ = {
 			isa = PBXGroup;
 			children = (
+				AD2203832BACBF9A00C27218 /* Fonts */,
+				ADBC7DDA2BA317DB0042D1F6 /* yeterApp.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				ADB31C182B766A04002C4DF2 /* YeterNative.swift */,
+				ADB31C1B2B766D1B002C4DF2 /* YeterNative.m */,
+				ADB31C1D2B76706E002C4DF2 /* YeterNative-Bridging-Header.h */,
 			);
 			name = yeterApp;
 			sourceTree = "<group>";
@@ -119,6 +202,7 @@
 				13B07FAE1A68108700A75B9A /* yeterApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* yeterAppTests */,
+				ADD378672B3242D9000AF629 /* MessageFilterExtension */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -133,8 +217,45 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* yeterApp.app */,
 				00E356EE1AD99517003FC87E /* yeterAppTests.xctest */,
+				ADD378662B3242D9000AF629 /* MessageFilterExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AD2203832BACBF9A00C27218 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AD22038D2BACBFBF00C27218 /* AntDesign.ttf */,
+				AD2203922BACBFBF00C27218 /* Entypo.ttf */,
+				AD2203862BACBFBF00C27218 /* EvilIcons.ttf */,
+				AD2203842BACBFBF00C27218 /* Feather.ttf */,
+				AD2203912BACBFBF00C27218 /* FontAwesome.ttf */,
+				AD2203902BACBFBF00C27218 /* FontAwesome5_Brands.ttf */,
+				AD2203852BACBFBF00C27218 /* FontAwesome5_Regular.ttf */,
+				AD22038E2BACBFBF00C27218 /* FontAwesome5_Solid.ttf */,
+				AD2203932BACBFBF00C27218 /* FontAwesome6_Brands.ttf */,
+				AD2203882BACBFBF00C27218 /* FontAwesome6_Regular.ttf */,
+				AD22038F2BACBFBF00C27218 /* FontAwesome6_Solid.ttf */,
+				AD2203892BACBFBF00C27218 /* Fontisto.ttf */,
+				AD2203952BACBFBF00C27218 /* Foundation.ttf */,
+				AD2203962BACBFBF00C27218 /* Ionicons.ttf */,
+				AD2203872BACBFBF00C27218 /* MaterialCommunityIcons.ttf */,
+				AD2203942BACBFBF00C27218 /* MaterialIcons.ttf */,
+				AD22038A2BACBFBF00C27218 /* Octicons.ttf */,
+				AD22038B2BACBFBF00C27218 /* SimpleLineIcons.ttf */,
+				AD22038C2BACBFBF00C27218 /* Zocial.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		ADD378672B3242D9000AF629 /* MessageFilterExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AD3E8C322BA74B6800426533 /* MessageFilterExtension.entitlements */,
+				ADD378682B3242D9000AF629 /* MessageFilterExtension.swift */,
+				ADD3786A2B3242D9000AF629 /* Info.plist */,
+			);
+			path = MessageFilterExtension;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -183,15 +304,34 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				ADD378712B3242D9000AF629 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ADD3786C2B3242D9000AF629 /* PBXTargetDependency */,
 			);
 			name = yeterApp;
 			productName = yeterApp;
 			productReference = 13B07F961A680F5B00A75B9A /* yeterApp.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ADD378652B3242D9000AF629 /* MessageFilterExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADD3786E2B3242D9000AF629 /* Build configuration list for PBXNativeTarget "MessageFilterExtension" */;
+			buildPhases = (
+				ADD378622B3242D9000AF629 /* Sources */,
+				ADD378632B3242D9000AF629 /* Frameworks */,
+				ADD378642B3242D9000AF629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessageFilterExtension;
+			productName = MessageFilterExtension;
+			productReference = ADD378662B3242D9000AF629 /* MessageFilterExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -199,6 +339,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -206,7 +347,10 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1500;
+					};
+					ADD378652B3242D9000AF629 = {
+						CreatedOnToolsVersion = 15.0.1;
 					};
 				};
 			};
@@ -225,6 +369,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* yeterApp */,
 				00E356ED1AD99517003FC87E /* yeterAppTests */,
+				ADD378652B3242D9000AF629 /* MessageFilterExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -242,7 +387,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				AD2203A82BACBFBF00C27218 /* Foundation.ttf in Resources */,
+				AD22039D2BACBFBF00C27218 /* Octicons.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				AD2203A42BACBFBF00C27218 /* FontAwesome.ttf in Resources */,
+				AD2203A72BACBFBF00C27218 /* MaterialIcons.ttf in Resources */,
+				AD2203A12BACBFBF00C27218 /* FontAwesome5_Solid.ttf in Resources */,
+				AD2203982BACBFBF00C27218 /* FontAwesome5_Regular.ttf in Resources */,
+				AD22039B2BACBFBF00C27218 /* FontAwesome6_Regular.ttf in Resources */,
+				AD2203A22BACBFBF00C27218 /* FontAwesome6_Solid.ttf in Resources */,
+				AD2203992BACBFBF00C27218 /* EvilIcons.ttf in Resources */,
+				AD2203A02BACBFBF00C27218 /* AntDesign.ttf in Resources */,
+				AD2203A32BACBFBF00C27218 /* FontAwesome5_Brands.ttf in Resources */,
+				AD22039F2BACBFBF00C27218 /* Zocial.ttf in Resources */,
+				AD22039A2BACBFBF00C27218 /* MaterialCommunityIcons.ttf in Resources */,
+				AD22039E2BACBFBF00C27218 /* SimpleLineIcons.ttf in Resources */,
+				AD22039C2BACBFBF00C27218 /* Fontisto.ttf in Resources */,
+				AD2203A92BACBFBF00C27218 /* Ionicons.ttf in Resources */,
+				AD2203A52BACBFBF00C27218 /* Entypo.ttf in Resources */,
+				AD2203A62BACBFBF00C27218 /* FontAwesome6_Brands.ttf in Resources */,
+				AD2203972BACBFBF00C27218 /* Feather.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD378642B3242D9000AF629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,8 +563,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADB31C1C2B766D1B002C4DF2 /* YeterNative.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				ADB31C192B766A04002C4DF2 /* YeterNative.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADD378622B3242D9000AF629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADD378692B3242D9000AF629 /* MessageFilterExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +586,11 @@
 			target = 13B07F861A680F5B00A75B9A /* yeterApp */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
+		ADD3786C2B3242D9000AF629 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADD378652B3242D9000AF629 /* MessageFilterExtension */;
+			targetProxy = ADD3786B2B3242D9000AF629 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -412,6 +598,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-yeterApp-yeterAppTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -439,6 +626,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-yeterApp-yeterAppTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = yeterAppTests/Info.plist;
@@ -463,11 +651,16 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-yeterApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = yeterApp/yeterApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92867Z79G9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = yeterApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,8 +671,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozkokdev.yeter;
 				PRODUCT_NAME = yeterApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "YeterNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -490,10 +684,15 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-yeterApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = yeterApp/yeterApp.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 92867Z79G9;
 				INFOPLIST_FILE = yeterApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,8 +703,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozkokdev.yeter;
 				PRODUCT_NAME = yeterApp;
+				SWIFT_OBJC_BRIDGING_HEADER = "YeterNative-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -580,11 +780,7 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -652,15 +848,94 @@
 					"-DFOLLY_USE_LIBCPP=1",
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-Wl",
-					"-ld_classic",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADD3786F2B3242D9000AF629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = MessageFilterExtension/MessageFilterExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 92867Z79G9;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MessageFilterExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MessageFilterExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozkokdev.yeter.MessageFilterExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADD378702B3242D9000AF629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = MessageFilterExtension/MessageFilterExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 92867Z79G9;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MessageFilterExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MessageFilterExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozkokdev.yeter.MessageFilterExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -690,6 +965,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADD3786E2B3242D9000AF629 /* Build configuration list for PBXNativeTarget "MessageFilterExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADD3786F2B3242D9000AF629 /* Debug */,
+				ADD378702B3242D9000AF629 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
