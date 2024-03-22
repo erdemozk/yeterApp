@@ -98,8 +98,8 @@ const Home = () => {
             }
           } else
             Alert.alert(
-              'Emin misin?',
-              `${item.title} kelimesini silmek üzeresin`,
+              'Are you sure?',
+              `Do you want to delete ${item.title} word?`,
               [
                 {
                   text: 'Cancel',
@@ -107,13 +107,13 @@ const Home = () => {
                   style: 'cancel',
                 },
                 {
-                  text: 'Sil',
+                  text: 'Delete',
                   style: 'destructive',
                   onPress: async () => {
                     await YeterNative.removeWord(item.title)
                       .then(data => {
                         prepareData(data);
-                        notifyInfo(`${item.title} kelimesi silindi`);
+                        notifyInfo(`${item.title} deleted`);
                       })
                       .catch(e => notifyError(null, e));
                   },
@@ -209,7 +209,7 @@ const Home = () => {
           size={26}
           name="delete-outline"
           onPress={() =>
-            Alert.alert('Emin misin?', 'Seçili kelimeleri sil', [
+            Alert.alert('Are you sure?', 'Selected words will be deleted', [
               {
                 text: 'Cancel',
                 style: 'cancel',
@@ -226,6 +226,7 @@ const Home = () => {
                     setSelectMode(false);
                     setSelectedWords([]);
                   });
+                  notifyInfo('Selected words deleted');
                 },
               },
             ])
@@ -248,6 +249,7 @@ const Home = () => {
           : color.light.touchBorder,
       }}>
       <TextInput
+        autoFocus
         value={searchWord}
         onChangeText={setSearchWord}
         autoCapitalize="none"
@@ -293,10 +295,10 @@ const Home = () => {
         />
         <TouchableOpacity
           style={{
-            right: 30,
+            right: 20,
             width: 60,
             height: 60,
-            bottom: 40,
+            bottom: 50,
             borderWidth: 1,
             borderRadius: 30,
             paddingVertical: 6,
@@ -307,19 +309,19 @@ const Home = () => {
             backgroundColor: '#3A76F0',
           }}
           onPress={() => {
-            Alert.prompt('Kelime Ekle', null, async text => {
+            Alert.prompt('Add Word', null, async text => {
               if (
                 text &&
                 text.length > 0 &&
                 !words.filter(word => word.title === text).length
               ) {
-                await YeterNative.addWord(text.toLocaleLowerCase())
+                await YeterNative.addWord(text.toLowerCase())
                   .then(data => {
                     prepareData(data);
-                    notifySuccess(`${text} kelimesi eklendi`);
+                    notifySuccess(`${text.toLowerCase()} added`);
                   })
                   .catch(e => notifyError(null, e));
-              } else notifyInfo('Kelime zaten mevcut');
+              } else notifyInfo('Word already exists');
             });
           }}>
           <Icon name="plus" size={32} color="#FFFFFF"/>
