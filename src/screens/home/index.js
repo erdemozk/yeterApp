@@ -1,20 +1,17 @@
 import React, {useState, useEffect} from 'react';
 import {
   Text,
-  View,
   Alert,
   Keyboard,
   FlatList,
-  StatusBar,
-  TextInput,
   SafeAreaView,
   NativeModules,
   useColorScheme,
   TouchableOpacity,
   TouchableWithoutFeedback,
 } from 'react-native';
-import color from '../../constants/color';
-import defaultList from '../../constants/defaultList';
+import {color, defaultList} from '../../constants';
+import {SelectBar, SearchBar} from '../../components';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {notifyInfo, notifyError, notifySuccess} from '../../utils';
 
@@ -67,14 +64,6 @@ const Home = () => {
       }}>
       {item.title}
     </Text>
-  );
-
-  const IconButton = ({icon, color, size, onPress}) => (
-    <TouchableOpacity
-      onPress={onPress}
-      style={{padding: 5, width: 50, height: 50}}>
-      <Icon name={icon} size={size} color={color} />
-    </TouchableOpacity>
   );
 
   const Item = ({item}) => {
@@ -144,137 +133,6 @@ const Home = () => {
     );
   };
 
-  const SelectBar = () => (
-    <View
-      style={{
-        height: 54,
-        borderWidth: 1,
-        borderRadius: 4,
-        marginVertical: 10,
-        flexDirection: 'row',
-        marginHorizontal: 10,
-        paddingHorizontal: 5,
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        backgroundColor: isDarkMode
-          ? color.dark.touchBackground
-          : color.light.touchBackground,
-        borderColor: isDarkMode
-          ? color.dark.touchBorder
-          : color.light.touchBorder,
-      }}>
-      <View
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          width: '43%',
-        }}>
-        <Icon
-          size={26}
-          name="close"
-          onPress={() => setSelectMode(false)}
-          color={isDarkMode ? color.dark.textColor : color.light.textColor}
-        />
-        <Text
-          style={{
-            fontSize: 14,
-            color: isDarkMode ? color.dark.textColor : color.light.textColor,
-          }}>
-          Selected Word {`${selectedWords.length}`}
-        </Text>
-      </View>
-      <View
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          width: '20%',
-        }}>
-        <Icon
-          size={26}
-          name={
-            selectedWords.length !== words.length
-              ? 'expand-all-outline'
-              : 'collapse-all-outline'
-          }
-          onPress={() =>
-            selectedWords.length !== words.length
-              ? setSelectedWords(words)
-              : setSelectedWords([])
-          }
-          color={isDarkMode ? color.dark.textColor : color.light.textColor}
-        />
-        <Icon
-          size={26}
-          name="delete-outline"
-          onPress={() =>
-            Alert.alert('Are you sure?', 'Selected words will be deleted', [
-              {
-                text: 'Cancel',
-                style: 'cancel',
-              },
-              {
-                text: 'Delete',
-                style: 'destructive',
-                onPress: async () => {
-                  selectedWords.forEach(async word => {
-                    await YeterNative.removeWord(word.title);
-                  });
-                  await YeterNative.getWords().then(data => {
-                    prepareData(data);
-                    setSelectMode(false);
-                    setSelectedWords([]);
-                  });
-                  notifyInfo('Selected words deleted');
-                },
-              },
-            ])
-          }
-          color={isDarkMode ? color.dark.textColor : color.light.textColor}
-        />
-      </View>
-    </View>
-  );
-
-  const SearchBar = () => (
-    <View
-      style={{
-        flexDirection: 'row',
-        borderBottomWidth: 1,
-        marginHorizontal: 10,
-        justifyContent: 'flex-end',
-        borderColor: isDarkMode
-          ? color.dark.touchBorder
-          : color.light.touchBorder,
-      }}>
-      <TextInput
-        autoFocus
-        value={searchWord}
-        onChangeText={setSearchWord}
-        autoCapitalize="none"
-        placeholder="Search"
-        autoCorrect={false}
-        style={{
-          height: 54,
-          fontSize: 14,
-          width: '100%',
-          borderWidth: 1,
-          borderRadius: 4,
-          marginVertical: 10,
-          paddingHorizontal: 10,
-          borderColor: isDarkMode
-            ? color.dark.touchBorder
-            : color.light.touchBorder,
-          backgroundColor: isDarkMode
-            ? color.dark.touchBackground
-            : color.light.touchBackground,
-          color: isDarkMode ? color.dark.textColor : color.light.textColor,
-        }}
-      />
-    </View>
-  );
-
   return (
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <SafeAreaView
@@ -282,7 +140,17 @@ const Home = () => {
           flex: 1,
           backgroundColor: isDarkMode ? 'black' : 'white',
         }}>
-        {selectMode ? <SelectBar /> : <SearchBar />}
+        {selectMode ? (
+          <SelectBar
+            words={words}
+            prepareData={prepareData}
+            setSelectMode={setSelectMode}
+            selectedWords={selectedWords}
+            setSelectedWords={setSelectedWords}
+          />
+        ) : (
+          <SearchBar searchWord={searchWord} setSearchWord={setSearchWord} />
+        )}
         <FlatList
           style={{flex: 1}}
           contentContainerStyle={{paddingVertical: 10}}
@@ -292,6 +160,7 @@ const Home = () => {
               : words
           }
           renderItem={({item, index}) => <Item item={item} index={index} />}
+          onScrollBeginDrag={Keyboard.dismiss}
         />
         <TouchableOpacity
           style={{
@@ -313,18 +182,19 @@ const Home = () => {
               if (
                 text &&
                 text.length > 0 &&
-                !words.filter(word => word.title === text).length
+                !words.some(word => word.title === text)
               ) {
-                await YeterNative.addWord(text.toLowerCase())
-                  .then(data => {
-                    prepareData(data);
-                    notifySuccess(`${text.toLowerCase()} added`);
-                  })
-                  .catch(e => notifyError(null, e));
+                try {
+                  const data = await YeterNative.addWord(text.toLowerCase());
+                  prepareData(data);
+                  notifySuccess(`${text.toLowerCase()} added`);
+                } catch (error) {
+                  notifyError(null, error);
+                }
               } else notifyInfo('Word already exists');
             });
           }}>
-          <Icon name="plus" size={32} color="#FFFFFF"/>
+          <Icon name="plus" size={32} color="#FFFFFF" />
         </TouchableOpacity>
       </SafeAreaView>
     </TouchableWithoutFeedback>

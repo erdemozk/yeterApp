@@ -1,6 +1,6 @@
 import React from 'react';
-import {StatusBar, useColorScheme} from 'react-native';
 import {NotifierWrapper} from 'react-native-notifier';
+import {StatusBar, useColorScheme} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 
 import {Home} from './src/screens';
