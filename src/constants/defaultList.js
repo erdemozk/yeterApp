@@ -25,4 +25,6 @@ export default [
   't1.t2m.io',
   'norabahis',
   'bio2.in',
+  'sugar',
+  'rush'
 ];
