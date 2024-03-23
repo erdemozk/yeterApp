@@ -2,32 +2,6 @@ import IdentityLookup;
 
 final class MessageFilterExtension: ILMessageFilterExtension {}
 
-// var words = [
-//   "bet",
-//   "vegas",
-//   "freespin",
-//   "bonanza", 
-//   "sweet", 
-//   "free", 
-//   "spin", 
-//   "dice", 
-//   "betvip", 
-//   "aviator", 
-//   "hediyebonus", 
-//   "cutt.ly",
-//   "14aff.com",
-//   "bahsin",
-//   "bahis",
-//   "slot",
-//   "tinyurl.com",
-//   "casino",
-//   "discount",
-//   "istek.me",
-//   "istekbet.site",
-//   "liongiris.com",
-//   "rebrand.ly"
-// ];
-
 extension MessageFilterExtension: ILMessageFilterQueryHandling, ILMessageFilterCapabilitiesQueryHandling {
     func handle(_ capabilitiesQueryRequest: ILMessageFilterCapabilitiesQueryRequest, context: ILMessageFilterExtensionContext, completion: @escaping (ILMessageFilterCapabilitiesQueryResponse) -> Void) {
         let response = ILMessageFilterCapabilitiesQueryResponse()
@@ -82,7 +56,6 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling, ILMessageFilterC
     }
 
     private func networkAction(for networkResponse: ILNetworkResponse) -> (ILMessageFilterAction, ILMessageFilterSubAction) {
-        // TODO: Replace with logic to parse the HTTP response and data payload of `networkResponse` to return an action.
         return (.none, .none)
     }
 
