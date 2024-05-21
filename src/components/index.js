@@ -1,4 +1,5 @@
-import SearchBar from "./SearchBar";
-import SelectBar from "./SelectBar";
+import SearchBar from "./searchBar";
+import SelectBar from "./selectBar";
+import WordItem from "./wordItem";
 
-export { SelectBar, SearchBar };
+export { SelectBar, SearchBar, WordItem };

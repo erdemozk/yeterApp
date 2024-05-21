@@ -1,8 +1,11 @@
 import IdentityLookup;
+import NaturalLanguage
+import CoreML
 
 final class MessageFilterExtension: ILMessageFilterExtension {}
 
 extension MessageFilterExtension: ILMessageFilterQueryHandling, ILMessageFilterCapabilitiesQueryHandling {
+
     func handle(_ capabilitiesQueryRequest: ILMessageFilterCapabilitiesQueryRequest, context: ILMessageFilterExtensionContext, completion: @escaping (ILMessageFilterCapabilitiesQueryResponse) -> Void) {
         let response = ILMessageFilterCapabilitiesQueryResponse()
         completion(response)
@@ -40,6 +43,9 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling, ILMessageFilterC
     }
 
     private func offlineAction(for queryRequest: ILMessageFilterQueryRequest) -> (ILMessageFilterAction, ILMessageFilterSubAction) {
+        let mlModel = try! YeterML(configuration: MLModelConfiguration()).model
+        let sentimentPredictor = try! NLModel(mlModel: mlModel)
+
         guard let userDefaults = UserDefaults(suiteName: "group.com.ozkokdev.yeter.appgroup"),
             let words = userDefaults.array(forKey: "words") as? [String],
             let messageBody = queryRequest.messageBody?.lowercased() else {
@@ -51,6 +57,11 @@ extension MessageFilterExtension: ILMessageFilterQueryHandling, ILMessageFilterC
                 return (.junk, .none)
             }
         }
+
+        // When ML is ready to use, this block will be enabled
+        //if (sentimentPredictor.predictedLabel(for: messageBody) == "positive") {
+        //  return (.junk, .none)
+        //}
 
         return (.allow, .none)
     }

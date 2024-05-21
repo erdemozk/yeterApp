@@ -37,6 +37,8 @@
 		ADB31C1C2B766D1B002C4DF2 /* YeterNative.m in Sources */ = {isa = PBXBuildFile; fileRef = ADB31C1B2B766D1B002C4DF2 /* YeterNative.m */; };
 		ADD378692B3242D9000AF629 /* MessageFilterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD378682B3242D9000AF629 /* MessageFilterExtension.swift */; };
 		ADD3786D2B3242D9000AF629 /* MessageFilterExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = ADD378662B3242D9000AF629 /* MessageFilterExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ADFAFCBF2BB46B29006367FE /* YeterML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ADFAFCBE2BB46B29006367FE /* YeterML.mlmodel */; };
+		ADFAFCC02BB46B29006367FE /* YeterML.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ADFAFCBE2BB46B29006367FE /* YeterML.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,7 @@
 		ADD378662B3242D9000AF629 /* MessageFilterExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessageFilterExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADD378682B3242D9000AF629 /* MessageFilterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageFilterExtension.swift; sourceTree = "<group>"; };
 		ADD3786A2B3242D9000AF629 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADFAFCBE2BB46B29006367FE /* YeterML.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YeterML.mlmodel; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -251,6 +254,7 @@
 		ADD378672B3242D9000AF629 /* MessageFilterExtension */ = {
 			isa = PBXGroup;
 			children = (
+				ADFAFCBE2BB46B29006367FE /* YeterML.mlmodel */,
 				AD3E8C322BA74B6800426533 /* MessageFilterExtension.entitlements */,
 				ADD378682B3242D9000AF629 /* MessageFilterExtension.swift */,
 				ADD3786A2B3242D9000AF629 /* Info.plist */,
@@ -566,6 +570,7 @@
 				ADB31C1C2B766D1B002C4DF2 /* YeterNative.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				ADB31C192B766A04002C4DF2 /* YeterNative.swift in Sources */,
+				ADFAFCBF2BB46B29006367FE /* YeterML.mlmodel in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -575,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADD378692B3242D9000AF629 /* MessageFilterExtension.swift in Sources */,
+				ADFAFCC02BB46B29006367FE /* YeterML.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -655,7 +661,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = yeterApp/yeterApp.entitlements;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 92867Z79G9;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = yeterApp/Info.plist;
@@ -688,7 +694,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = yeterApp/yeterApp.entitlements;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 92867Z79G9;
 				INFOPLIST_FILE = yeterApp/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";

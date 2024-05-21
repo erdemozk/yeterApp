@@ -1,6 +1,6 @@
-import {Notifier, NotifierComponents} from 'react-native-notifier';
+import { Notifier, NotifierComponents } from 'react-native-notifier';
 
-const notifyError = (title = 'Bir hata oluştu', description) =>
+const notifyError = (title = 'An error occurred', description) =>
   Notifier.showNotification({
     title: title,
     description: description || null,
@@ -10,7 +10,7 @@ const notifyError = (title = 'Bir hata oluştu', description) =>
     },
   });
 
-const notifySuccess = (title, description) =>
+const notifySuccess = (title = 'Success', description) =>
   Notifier.showNotification({
     title: title,
     description: description || null,
@@ -30,4 +30,4 @@ const notifyInfo = (title = 'Information', description) =>
     },
   });
 
-export {notifyError, notifySuccess, notifyInfo};
+export { notifyError, notifySuccess, notifyInfo };
