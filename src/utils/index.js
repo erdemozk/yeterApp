@@ -30,4 +30,12 @@ const notifyInfo = (title = 'Information', description) =>
     },
   });
 
-export { notifyError, notifySuccess, notifyInfo };
+const writeToAsyncStorage = async (key, value) => {
+  try {
+    await AsyncStorage.setItem(key, JSON.stringify(value));
+  } catch (error) {
+    notifyError(null, error);
+  }
+};
+
+export { notifyError, notifySuccess, notifyInfo, writeToAsyncStorage };
